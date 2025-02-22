@@ -1,0 +1,192 @@
+
+Student@B19M23 MINGW64 ~ (master)
+$ git clone https://github.com/nhanle33/KTDL.git
+Cloning into 'KTDL'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+Student@B19M23 MINGW64 ~ (master)
+$ cd T:
+
+Student@B19M23 MINGW64 /t
+$ git clone https://github.com/nhanle33/KTDL.git
+fatal: destination path 'KTDL' already exists and is not an empty directory.
+
+Student@B19M23 MINGW64 /t
+$ git clone https://github.com/nhanle33/KTDL.git
+Cloning into 'KTDL'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+Student@B19M23 MINGW64 /t
+$ ls
+'$RECYCLE.BIN'/
+ 19_23648141_TrinhDangLoi_BT1.pdf
+ 19_23648141_TrinhDangLoi_BT2.pdf
+ 22708761_NguyenHongPhuc/
+ 23731341_NguyenNgocHuy/
+ 23731341_NguyenNgocHuy.rar
+ 24_23656951_PhungTanThaoMy/
+'Bt tuan 1'/
+'Bt tuan 1.rar'
+'Bt tuan 2'/
+'Bt tuan 2.rar'
+'Bt tuan 3'/
+'Bt tuan 3.rar'
+ DINH/
+ KTDL/
+'LAB_REPORT_24661761_PHAN NHUT TAN.docx'
+'LAB_REPORT_24661761_PHAN NHUT TAN.pdf'
+'LAB_REPORT_24661761_PHAN NHUT TAN.pdf.docx'
+'LAB_REPORT_24670021_TRAN HIEU PHONG.docx'
+'LAB_REPORT_24670021_TRAN HIEU PHONG.pdf'
+'LAB_REPORT_24731411_Hồ Lê Quang.docx'
+ LAB_REPORT_MaSV_TenSV.docx
+ Lab2/
+'New folder'/
+'System Volume Information'/
+ TKMT_lab_02.rar
+'Thong ke may tinh va ung dung'/
+ TypingMaster/
+ TypingMaster.rar
+ Ubuntu-VMWARE/
+ Ubuntu-VMWARE.rar
+ labs/
+'~$B_REPORT_24661761_PHAN NHUT TAN.docx'
+'~$B_REPORT_24731411_Hồ Lê Quang.docx'
+'~WRL0594.tmp'
+'~WRL4084.tmp'
+
+Student@B19M23 MINGW64 /t
+$ cd KTDL
+
+Student@B19M23 MINGW64 /t/KTDL (main)
+$ ls
+abc.txt  test.txt
+
+Student@B19M23 MINGW64 /t/KTDL (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        abc.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Student@B19M23 MINGW64 /t/KTDL (main)
+$ git add -A
+
+Student@B19M23 MINGW64 /t/KTDL (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   abc.txt
+
+
+Student@B19M23 MINGW64 /t/KTDL (main)
+$ git origin main
+git: 'origin' is not a git command. See 'git --help'.
+
+Student@B19M23 MINGW64 /t/KTDL (main)
+$ git commit -m
+error: switch `m' requires a value
+
+Student@B19M23 MINGW64 /t/KTDL (main)
+$ git origin
+git: 'origin' is not a git command. See 'git --help'.
+
+Student@B19M23 MINGW64 /t/KTDL (main)
+$ git origin main
+git: 'origin' is not a git command. See 'git --help'.
+
+Student@B19M23 MINGW64 /t/KTDL (main)
+$ git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+Student@B19M23 MINGW64 /t/KTDL (main)
+$ git push
+Everything up-to-date
+
+Student@B19M23 MINGW64 /t/KTDL (main)
+$ git push origin
+Everything up-to-date
+
+Student@B19M23 MINGW64 /t/KTDL (main)
+$ git commit -m "alo alo"
+[main bdcafd4] alo alo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 abc.txt
+
+Student@B19M23 MINGW64 /t/KTDL (main)
+$ git push origin
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 270 bytes | 270.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/nhanle33/KTDL.git
+   4ac21c6..bdcafd4  main -> main
+
+Student@B19M23 MINGW64 /t/KTDL (main)
+$ git push origin main
+Everything up-to-date
+
+Student@B19M23 MINGW64 /t/KTDL (main)
+$ ^C
+
+Student@B19M23 MINGW64 /t/KTDL (main)
